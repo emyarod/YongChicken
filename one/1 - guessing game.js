@@ -9,34 +9,50 @@ var firstLetterCapital = capital.charAt(0);
 var pacific = ["California", "Oregon", "Washington", "Nevada"];
 var mountain = ["Montana", "Idaho", "Wyoming", "Utah", "Colorado", "Arizona", "New Mexico"];
 var central = ["North Dakota", "South Dakota", "Nebraska", "Kansas", "Oklahoma", "Texas", "Minnesota", "Iowa", "Missouri", "Arkansas", "Louisiana", "Wisconsin", "Illinois", "Tennessee", "Missouri", "Alabama"]
-var timeZone;
-
 switch(true) {
-	case pacific.indexOf(state) > -1:
-		timeZone = "Pacific Time Zone";
-	break;
-	case mountain.indexOf(state) > -1;
-		timeZone = "Mountain Time Zone";
-	break;
-	case central.indexOf(state) > -1;
-	timeZone = "Central Time Zone";
-	break;
+	case (pacific.indexOf(state) > -1):
+		var timeZone = "Pacific";
+		break;
+	case (mountain.indexOf(state) > -1):
+		var timeZone = "Mountain";
+		break;
+	case (central.indexOf(state) > -1):
+		var timeZone = "Central";
+		break;
 	default:
-	timeZone = "Eastern Time Zone";
+		var timeZone = "Eastern";
+}
+var mottoHint = "This state's motto is \"" + mottos[random] + "\"";
+var firstLetterCapitalHint = "The first letter of this state's capital is " + firstLetterCapital;
+var timeZoneHint = "This state is in the " + timeZone + " Time Zone";
+var firstLetterHint = "The first letter of this state is " + firstLetter;
+var capitalHint = "The capital of this state is " + capital;
+var hints = [mottoHint, firstLetterCapitalHint, timeZoneHint, firstLetterHint, capitalHint];
+
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function(txt) {
+  	return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
 }
 
 var response = prompt("I'm thinking of a state in the USA. Can you guess what it is?");
 
 for(i = 0; i < 6; i++) {
-	if(response.toUpperCase() === state.toUpperCase()) {
-		alert("gj");
-	} else if(i < 5) {
-		response = prompt("Incorrect. You have " + (5 - i) + " tries remaining. I'm thinking of a state in the USA. Can you guess what it is?");
-	} else if(i === 5) {
-		alert("gg. The correct answer is " + state);
+	switch(true) {
+		case (states.indexOf(toTitleCase(response)) === -1):
+			i--;
+			response = prompt("Invalid response. Please try again. You have " + (5-i) + " tries remaining. I'm thinking of a state in the USA. Can you guess what it is?");
+			break;
+		case (response.toUpperCase() === state.toUpperCase()):
+			alert("Correct!");
+			break;
+		case (i < 5):
+			response = prompt("Incorrect. You have " + (5 - i) + " tries remaining. I'm thinking of a state in the USA. Can you guess what it is? " + hints[i]);
+			break;
+		case (i === 5):
+			alert("The correct answer is " + state);
+			break;
+		default:
+			break;
 	}
 }
-
-var hintList = [mottos[random], firstLetterCapital, timeZone, firstLetter, capital];
-
-var mottos = "This state's motto is " + mottos[random];

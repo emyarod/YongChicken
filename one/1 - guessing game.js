@@ -11,8 +11,6 @@ var mountain = ["Montana", "Idaho", "Wyoming", "Utah", "Colorado", "Arizona", "N
 var central = ["North Dakota", "South Dakota", "Nebraska", "Kansas", "Oklahoma", "Texas", "Minnesota", "Iowa", "Missouri", "Arkansas", "Louisiana", "Wisconsin", "Illinois", "Tennessee", "Missouri", "Alabama"]
 var timeZone;
 
-var mottos = "This state's motto is " + mottos[random];
-
 switch(true) {
 	case pacific.indexOf(state) > -1:
 		timeZone = "Pacific Time Zone";
@@ -27,16 +25,9 @@ switch(true) {
 	timeZone = "Eastern Time Zone";
 }
 
-console.log(state);
-console.log(capital);
-console.log(motto);
-
 var response = prompt("I'm thinking of a state in the USA. Can you guess what it is?");
 
 for(i = 0; i < 6; i++) {
-	if(response.indexOf(response.toUpperCase()) === -1) {
-		alert("That's not a valid response. Please try again.");
-	}
 	if(response.toUpperCase() === state.toUpperCase()) {
 		alert("gj");
 	} else if(i < 5) {

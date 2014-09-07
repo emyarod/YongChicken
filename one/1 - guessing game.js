@@ -24,7 +24,7 @@ switch(true) {
 }
 var mottoHint = "This state's motto is \"" + mottos[random] + "\"";
 var firstLetterCapitalHint = "The first letter of this state's capital is " + firstLetterCapital;
-var timeZoneHint = "This state is in the " + timeZone + " Time Zone";
+var timeZoneHint = "Most of this state is in the " + timeZone + " Time Zone";
 var firstLetterHint = "The first letter of this state is " + firstLetter;
 var capitalHint = "The capital of this state is " + capital;
 var hints = [mottoHint, firstLetterCapitalHint, timeZoneHint, firstLetterHint, capitalHint];

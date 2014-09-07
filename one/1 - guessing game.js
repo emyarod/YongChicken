@@ -35,7 +35,7 @@ function toTitleCase(str) {
   });
 }
 
-var response = prompt("I'm thinking of a state in the USA. Can you guess what it is?");
+var response = prompt("I'm thinking of a state in the USA. Guess what it is.");
 
 for(i = 0; i < 6; i++) {
 	switch(true) {
@@ -47,7 +47,7 @@ for(i = 0; i < 6; i++) {
 			alert("Correct!");
 			break;
 		case (i < 5):
-			response = prompt("Incorrect. You have " + (5 - i) + " tries remaining. I'm thinking of a state in the USA. Can you guess what it is? " + hints[i]);
+			response = prompt("Incorrect. You have " + (5 - i) + " tries remaining. I'm thinking of a state in the USA. Guess what it is. " + hints[i]);
 			break;
 		case (i === 5):
 			alert("The correct answer is " + state);

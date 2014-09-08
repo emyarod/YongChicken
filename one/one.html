@@ -8,7 +8,19 @@
 <body>
 	<h1>one.</h1>
 	<h2>guessing game.</h2>
-	<a href="http://emyarod.github.io/YongChicken">go back</a>
+	<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
+	<br>
+	<!-- <input type="text" name="guess" placeholder="Enter your guess" value="" /> -->
+	<form action="" method="post" name="formxml">
+	  <input type="text" name="response" placeholder="Enter your guess" id="response">
+	  <input type="button" onclick="getGuess();" value="submit">
+	</form>
+	<br>
+	<div id="incorrect"></div>
+	<div id="correct"></div>
+	<div id="answer"></div>
+	<br>
+	<a href="http://emyarod.github.io/YongChicken">up.</a>
 	<script src="1 - guessing game.js"></script>
 </body>
 </html>

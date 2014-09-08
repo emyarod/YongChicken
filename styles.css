@@ -2,3 +2,15 @@ body {
 	font-family: "Helvetica Neue", "Arial", sans-serif;
 	text-align: center;
 }
+
+body a {
+	text-decoration: none;
+}
+
+#incorrect {
+	color: red;
+}
+
+#correct {
+	color: green;
+}

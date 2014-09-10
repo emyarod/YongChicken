@@ -10,10 +10,9 @@
 	<h2>guessing game.</h2>
 	<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
 	<br>
-	<!-- <input type="text" name="guess" placeholder="Enter your guess" value="" /> -->
-	<form action="" method="post" name="formxml">
+	<form action="javascript:void(0);" method="post" name="formxml" onsubmit="getGuess();">
 	  <input type="text" name="response" placeholder="Enter your guess" id="response">
-	  <input type="button" onclick="getGuess();" value="submit">
+	  <input type="submit" value="submit">
 	</form>
 	<br>
 	<div id="incorrect"></div>

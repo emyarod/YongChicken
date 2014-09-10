@@ -44,7 +44,7 @@ function toTitleCase(str) {
 
 // get response from text box
 function getGuess() {
-  userResponse = document.formxml.response.value;
+  userResponse = document.answerform.response.value;
 	if(i < 5) {
 		switch(true) {
 			case (states.indexOf(toTitleCase(userResponse)) === -1):
@@ -56,6 +56,8 @@ function getGuess() {
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "correct!";
 				document.getElementById("answer").textContent = "";
+				document.getElementById("response").disabled = true;
+				document.getElementById("submit").disabled = true;
 				break;
 			case (i < 5 && i != 4):
 				i++
@@ -67,29 +69,6 @@ function getGuess() {
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "";
 				document.getElementById("answer").textContent = "The correct answer is " + state;
-				break;
-			default:
-				break;
-		}
-	}
-}
-
-// var userResponse = prompt("I'm thinking of a state in the USA. Guess what it is.");
-function loop() {
-	for(i = 0; i < 6; i++) {
-		switch(true) {
-			case (states.indexOf(toTitleCase(userResponse)) === -1):
-				i--;
-				userResponse = prompt("Invalid response. Please try again. You have " + (5-i) + " tries remaining. I'm thinking of a state in the USA. Can you guess what it is?");
-				break;
-			case (userResponse.toUpperCase() === state.toUpperCase()):
-				alert("Correct!");
-				break;
-			case (i < 5):
-				userResponse = prompt("Incorrect. You have " + (5 - i) + " tries remaining. I'm thinking of a state in the USA. Guess what it is. " + hints[i]);
-				break;
-			case (i === 5):
-				alert("The correct answer is " + state);
 				break;
 			default:
 				break;

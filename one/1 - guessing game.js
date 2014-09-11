@@ -72,8 +72,8 @@ function getGuess() {
 			case (i === 4):
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "";
-				document.getElementById("answer").textContent = "The correct answer is " + state;
 				disable();
+				document.getElementById("answer").textContent = "The correct answer is " + state;
 				break;
 			default:
 				break;

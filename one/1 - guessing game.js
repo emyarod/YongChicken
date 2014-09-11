@@ -42,6 +42,11 @@ function toTitleCase(str) {
   });
 }
 
+function disable() {
+	document.getElementById("response").disabled = true;
+	document.getElementById("submit").disabled = true;
+}
+
 // get response from text box
 function getGuess() {
   userResponse = document.answerform.response.value;
@@ -56,8 +61,7 @@ function getGuess() {
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "correct!";
 				document.getElementById("answer").textContent = "";
-				document.getElementById("response").disabled = true;
-				document.getElementById("submit").disabled = true;
+				disable();
 				break;
 			case (i < 5 && i != 4):
 				i++
@@ -69,6 +73,7 @@ function getGuess() {
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "";
 				document.getElementById("answer").textContent = "The correct answer is " + state;
+				disable();
 				break;
 			default:
 				break;

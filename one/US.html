@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>one</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+	<h1>one.</h1>
+	<h2>guessing game.</h2>
+	<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
+	<br>
+	<form action="javascript:void(0);" method="post" name="answerform" onsubmit="getGuess();">
+	  <input type="text" name="response" placeholder="Enter your guess" id="response">
+	  <input type="submit" value="submit" id="submit">
+	  <input type="button" value="restart" id="restart" onclick="window.location.reload(true);">
+	</form>
+	<br>
+	<div id="incorrect"></div>
+	<div id="correct"></div>
+	<div id="answer"></div>
+	<br>
+	<a href="http://emyarod.github.io/YongChicken/one">up.</a>
+	<script src="guessingGameUS.js"></script>
+</body>
+</html>

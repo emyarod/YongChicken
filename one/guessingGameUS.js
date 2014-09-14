@@ -50,10 +50,10 @@ function disable() {
 // get response from text box
 function getGuess() {
   userResponse = document.answerform.response.value;
-	if(i < 5) {
+	if(i < 6) {
 		switch(true) {
 			case (states.indexOf(toTitleCase(userResponse)) === -1):
-				document.getElementById("incorrect").textContent = "invalid response. please try again. you have " + (5 - i) + " tries remaining";
+				document.getElementById("incorrect").textContent = "invalid response. please try again. you have " + (6 - i) + " tries remaining";
 				document.getElementById("correct").textContent = "";
 				document.getElementById("answer").textContent = "";
 				break;
@@ -63,13 +63,13 @@ function getGuess() {
 				document.getElementById("answer").textContent = "";
 				disable();
 				break;
-			case (i < 5 && i != 4):
-				i++
-				document.getElementById("incorrect").textContent = "incorrect. you have " + (5 - i) + " tries remaining. Hint: " + hints[i];
+			case (i < 5):
+				document.getElementById("incorrect").textContent = "incorrect. you have " + (6 - (i + 1)) + " tries remaining. Hint: " + hints[i];
 				document.getElementById("correct").textContent = "";
 				document.getElementById("answer").textContent = "";
+				i++;
 				break;
-			case (i === 4):
+			case (i === 5):
 				document.getElementById("incorrect").textContent = "";
 				document.getElementById("correct").textContent = "";
 				disable();

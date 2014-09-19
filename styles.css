@@ -74,3 +74,7 @@ body a {
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+
+#one a {
+	display: block;
+}

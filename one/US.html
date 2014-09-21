@@ -4,31 +4,37 @@
 	<meta charset="UTF-8">
 	<title>one</title>
 	<link rel="stylesheet" type="text/css" href="one.css">
+	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<h1>one.</h1>
-	<h2>guessing game.</h2>
-	<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
+	<section id="prompt">
+		<h1>one.</h1>
+		<h2>guessing game.</h2>
+		<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
+		<br>
+		<form action="javascript:void(0);" method="post" name="answerform" onsubmit="getGuess();">
+		  <input type="text" name="response" placeholder="Enter your guess" id="response">
+		  <input type="submit" value="submit" id="submit">
+		  <input type="button" value="restart" id="restart" onclick="window.location.reload(true);">
+		</form>
+	</section>
 	<br>
-	<form action="javascript:void(0);" method="post" name="answerform" onsubmit="getGuess();">
-	  <input type="text" name="response" placeholder="Enter your guess" id="response">
-	  <input type="submit" value="submit" id="submit">
-	  <input type="button" value="restart" id="restart" onclick="window.location.reload(true);">
-	</form>
-	<br>
+	<section id="hints">
+		<ul>
+			<li id="hintone"></li>
+			<li id="hinttwo"></li>
+			<li id="hintthree"></li>
+			<li id="hintfour"></li>
+			<li id="hintfive"></li>
+		</ul>
+	</section>
 	<div id="incorrect"></div>
 	<div id="correct"></div>
 	<div id="answer"></div>
-	<ul>
-		<li id="hintone"></li>
-		<li id="hinttwo"></li>
-		<li id="hintthree"></li>
-		<li id="hintfour"></li>
-		<li id="hintfive"></li>
-	</ul>
 	<br>
 	<a href="http://emyarod.github.io/YongChicken/one/one.html">up.</a>
-	<script src="libs/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="guessingGameUS.js"></script>
 </body>
 </html>

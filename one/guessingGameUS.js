@@ -9,6 +9,8 @@ var firstLetterCapital = capital.charAt(0);
 var pacific = ["California", "Oregon", "Washington", "Nevada"];
 var mountain = ["Montana", "Idaho", "Wyoming", "Utah", "Colorado", "Arizona", "New Mexico"];
 var central = ["North Dakota", "South Dakota", "Nebraska", "Kansas", "Oklahoma", "Texas", "Minnesota", "Iowa", "Missouri", "Arkansas", "Louisiana", "Wisconsin", "Illinois", "Tennessee", "Missouri", "Alabama"]
+var alaska = ["Alaska"]
+var hawaiiAleutian = ["Hawaii"]
 
 // get time zone
 switch(true) {
@@ -20,6 +22,12 @@ switch(true) {
 		break;
 	case (central.indexOf(state) > -1):
 		var timeZone = "Central";
+		break;
+	case (alaska.indexOf(state > -1)):
+		var timeZone = "Alaska";
+		break;	
+	case (hawaiiAleutian.indexOf(state > -1)):
+		var timeZone = "Hawaii-Aleutian";
 		break;
 	default:
 		var timeZone = "Eastern";

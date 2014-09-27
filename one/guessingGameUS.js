@@ -54,11 +54,12 @@ function toTitleCase(str) {
 function disable() {
 	document.getElementById("response").disabled = true;
 	document.getElementById("submit").disabled = true;
+	document.getElementById("label").textContent = "";
 }
 
-// $(document).ready(function() {
-// 	$
-// });
+$(document).ready(function() {
+  $("#submit").fadeIn();
+});
 
 // get response from text box
 function getGuess() {

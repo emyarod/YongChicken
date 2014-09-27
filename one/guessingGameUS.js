@@ -23,10 +23,10 @@ switch(true) {
 	case (central.indexOf(state) > -1):
 		var timeZone = "Central";
 		break;
-	case (alaska.indexOf(state > -1)):
+	case (alaska.indexOf(state) > -1):
 		var timeZone = "Alaska";
 		break;	
-	case (hawaiiAleutian.indexOf(state > -1)):
+	case (hawaiiAleutian.indexOf(state) > -1):
 		var timeZone = "Hawaii-Aleutian";
 		break;
 	default:
@@ -58,7 +58,7 @@ function disable() {
 }
 
 $(document).ready(function() {
-  $(".group").hide().fadeIn(600);
+  $("form").hide().fadeIn(800);
 });
 
 // get response from text box

@@ -28,6 +28,10 @@ ul li {
 	color: green;
 }
 
+#submit {
+	background: transparent;
+}
+
 /*=============================*/
 /* form starting stylings ------------------------------- */
 .group {
@@ -62,7 +66,7 @@ label {
 /* active state */
 #response:focus ~ label, #response:valid ~ label 		{
 	left: -90px;
-  top: -60px;
+  top: -70px;
   font-size: 14px;
   color: #5264AE;
 }

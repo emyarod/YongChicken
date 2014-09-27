@@ -28,15 +28,11 @@ ul li {
 	color: green;
 }
 
-#submit {
-	background: transparent;
-}
-
 /*=============================*/
 /* form starting stylings ------------------------------- */
 .group {
   position: relative;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 #response {
   font-size: 18px;

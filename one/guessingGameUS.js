@@ -58,7 +58,7 @@ function disable() {
 }
 
 $(document).ready(function() {
-  $("#submit").fadeIn();
+  $("#submit").hide().fadeIn();
 });
 
 // get response from text box

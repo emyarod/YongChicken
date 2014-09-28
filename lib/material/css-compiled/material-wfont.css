@@ -46,12 +46,6 @@
 .shadow-z-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-/*body {
-  background-color: #EEEEEE;
-}
-body.inverse {
-  background: #333333;
-}*/
 body.inverse,
 body.inverse .form-control {
   color: rgba(255, 255, 255, 0.84);
@@ -1120,18 +1114,18 @@ select[multiple].form-control.focus {
 }
 .form-control-wrapper .floating-label {
   color: #7E7E7E;
-  font-size: 14px;
+  font-size: 18px;
   position: absolute;
   pointer-events: none;
   left: 0px;
-  top: 5px;
-  -webkit-transition: 0.2s ease all;
-          transition: 0.2s ease all;
+  top: 2px;
+  -webkit-transition: 0.3s ease all;
+          transition: 0.3s ease all;
   opacity: 0;
 }
 .form-control-wrapper .form-control:not(.empty) ~ .floating-label {
-  top: -10px;
-  font-size: 10px;
+  top: -15px;
+  font-size: 14px;
   opacity: 1;
 }
 .form-control-wrapper .form-control:focus:invalid ~ .floating-label,

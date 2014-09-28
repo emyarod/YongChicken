@@ -4,127 +4,39 @@ body {
 	text-align: center;
 }
 
-body a {
-	text-decoration: none;
-}
-
-ul li:before {
-	content: "";
-}
-
-ul {
-	margin: 0 auto 0 -45px;
-}
-
-ul li {
-	list-style: none outside none;
-}
-
 #incorrect {
 	color: red;
 }
 
-#correct {
-	color: green;
+form {
+  display: inline-block;
+  text-align: center;
 }
 
-/*=============================*/
-/* form starting stylings ------------------------------- */
-.group {
-  position: relative;
-  margin-top: 10px;
-}
-#response {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #757575;
+table {
+  width: 40% !important;
   margin: 0 auto;
 }
-#response:focus {outline: none;}
 
-/* LABEL ======================================= 10 to -20*/
-label {
-  color: #999;
-  font-size: 18px;
-  font-weight: normal;
-  position: relative;
-  pointer-events: none;
-  left: -75px;
-  top: -30px;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+#rowone, #rowtwo, #rowthree, #rowfour, #rowfive, .panel {
+	visibility: hidden;
+	display: none;
 }
 
-/* active state */
-#response:focus ~ label, #response:valid ~ label 		{
-	left: -90px;
-  top: -70px;
-  font-size: 14px;
-  color: #5264AE;
-}
-
-/* BOTTOM BARS ================================= */
-.bar 	{
-	position: relative;
-	display: block;
-	width: 300px;
+.panel {
+	width: 500px;
 	margin: 0 auto;
 }
-.bar:before, .bar:after {
-  content: "";
-  height:2px;
-  width: 0;
-  bottom: 1px;
-  position: absolute;
-  background: #5264AE;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%;
+
+.panel-body {
+	padding: 15px;
 }
 
-/* active state */
-#response:focus ~ .bar:before, #response:focus ~ .bar:after {
-  width:50%;
-}
-
-/* HIGHLIGHTER ================================== */
-.highlight {
-  position:absolute;
-  height: 60%;
-  width: 100px;
-  top: 0;
-  /*left: 75px;*/
-  pointer-events: none;
-  opacity:0.5;
-}
-
-/* active state */
-#response:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 50s ease;
-  -moz-animation:inputHighlighter 50s ease;
-  animation:inputHighlighter 50s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-	from {background: #5264AE;}
-  to 	{width: 0; background: transparent;}
-}
-@-moz-keyframes inputHighlighter {
-	from {background:#5264AE;}
-  to 	{width: 0; background: transparent;}
-}
-@keyframes inputHighlighter {
-	from {background:#5264AE;}
-  to 	{width: 0; background: transparent;}
+.flags {
+	background: url("img/stateflags.png");
+	background-position: 0 -401px;
+	height: 100px;
+	width: 150px;
+	padding-bottom: 15px;
+	margin: 0 auto 15px;
 }

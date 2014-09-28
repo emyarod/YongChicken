@@ -156,31 +156,31 @@ switch(true) {
 		$(".flags").css({"background-position":"0 -4001px", "width":"160px", "height":"96",});
 		break;
 	case (state ==="Tennessee"):
-		$(".flags").css({"background-position":"0 -4197px", "width":"167px",});
+		$(".flags").css({"background-position":"0 -4097px", "width":"167px",});
 		break;
 	case (state ==="Texas"):
-		$(".flags").css({"background-position":"0 -4297px",});
+		$(".flags").css({"background-position":"0 -4197px",});
 		break;
 	case (state ==="Utah"):
-		$(".flags").css({"background-position":"0 -4397px", "width":"167px",});
+		$(".flags").css({"background-position":"0 -4297px", "width":"167px",});
 		break;
 	case (state ==="Vermont"):
-		$(".flags").css({"background-position":"0 -4497px", "width":"167px",});
+		$(".flags").css({"background-position":"0 -4397px", "width":"167px",});
 		break;
 	case (state ==="Virginia"):
-		$(".flags").css({"background-position":"0 -4597px", "width":"146px",});
+		$(".flags").css({"background-position":"0 -4497px", "width":"146px",});
 		break;
 	case (state ==="Washington"):
-		$(".flags").css({"background-position":"0 -4697px", "width":"168px",});
+		$(".flags").css({"background-position":"0 -4597px", "width":"168px",});
 		break;
 	case (state ==="West Virginia"):
-		$(".flags").css({"background-position":"0 -4797px", "width":"190px",});
+		$(".flags").css({"background-position":"0 -4697px", "width":"190px",});
 		break;
 	case (state ==="Wisconsin"):
-		$(".flags").css({"background-position":"0 -4897px",});
+		$(".flags").css({"background-position":"0 -4797px",});
 		break;
 	case (state ==="Wyoming"):
-		$(".flags").css({"background-position":"0 -4997px", "width":"143px",});
+		$(".flags").css({"background-position":"0 -4897px", "width":"143px",});
 		break;
 	default:
 		break;

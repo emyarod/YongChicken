@@ -14,31 +14,59 @@
 		<h1>one.</h1>
 		<h2>guessing game.</h2>
 		<div class="instructions">i'm thinking of a state in the USA. guess what it is.</div>
-		<br>
+		<br><br id="break">
 		<form action="javascript:void(0);" method="post" name="answerform" onsubmit="getGuess();">
-			<div class="group">
-			  <input name="response" id="response" type="text" required>
-			  <span class="highlight"></span>
-	    	<span class="bar"></span>
-	    	<label id="label">Enter your guess</label>
+			<div class="form-group">
+    		<input class="form-control floating-label" id="response" placeholder="Enter your guess" type="text" required>
 			</div>
 		  <input type="submit" class="btn btn-primary" value="submit" id="submit">
 		  <input type="button" class="btn btn-info" value="restart" id="restart" onclick="window.location.reload(true);">
 		</form>
 	</section>
 	<br>
-	<section id="hints">
-		<ul>
-			<li id="hintone"></li>
-			<li id="hinttwo"></li>
-			<li id="hintthree"></li>
-			<li id="hintfour"></li>
-			<li id="hintfive"></li>
-		</ul>
-	</section>
-	<div id="incorrect"></div>
-	<div id="correct"></div>
-	<div id="answer"></div>
+	<div class="panel panel-danger" id="incorrect">
+		<div class="panel-heading">
+			<h4 class="panel-title" id="incorrect-panel-title"></h4>
+		</div>
+		<div class="panel-body" id="incorrect-panel-body"></div>
+	</div>
+	<div class="panel panel-success" id="correct">
+		<div class="panel-heading">
+			<h4 class="panel-title" id="correct-panel-title"></h4>
+		</div>
+		<div class="flags" style="margin-top: 15px;"></div>
+	</div>
+
+	<div class="panel panel-info" id="answer">
+		<div class="panel-heading">
+			<h4 class="panel-title" id="info-panel-title"></h4>
+		</div>
+		<div class="panel-body" id="info-panel-body"></div>
+		<div class="flags"></div>
+	</div>
+	<br>
+	<table class="table table-striped table-hover">
+    <tr id="rowone">
+        <td><b>Motto</b></td>
+        <td id="hintone"></td>
+    </tr>
+    <tr id="rowtwo" class="active">
+        <td><b>First letter of capital</b></td>
+        <td id="hinttwo"></td>
+    </tr>
+    <tr id="rowthree">
+        <td><b>Time Zone</b></td>
+        <td id="hintthree"></td>
+    </tr>
+    <tr id="rowfour" class="active">
+        <td><b>First letter of state</b></td>
+        <td id="hintfour"></td>
+    </tr>
+    <tr id="rowfive">
+        <td><b>Capital</b></td>
+        <td id="hintfive"></td>
+    </tr>
+	</table>
 	<br>
 	<a href="http://emyarod.github.io/YongChicken/one/one.html">up.</a>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

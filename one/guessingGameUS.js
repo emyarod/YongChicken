@@ -33,6 +33,159 @@ switch(true) {
 		var timeZone = "Eastern";
 }
 
+// flag positions
+switch(true) {
+	case (state ==="Alabama"):
+		$(".flags").css({"background-position":"0 0",});
+		break;
+	case (state ==="Alaska"):
+		$(".flags").css({"background-position":"0 -100px", "width":"143px", "height":"101px",});
+		break;
+	case (state ==="Arizona"):
+		$(".flags").css({"background-position":"0 -201px",});
+		break;
+	case (state ==="Arkansas"):
+		$(".flags").css({"background-position":"0 -301px",});
+		break;
+	case (state ==="Colorado"):
+		$(".flags").css({"background-position":"0 -501px",});
+		break;
+	case (state ==="Connecticut"):
+		$(".flags").css({"background-position":"0 -601px", "width":"130px",});
+		break;
+	case (state ==="Delaware"):
+		$(".flags").css({"background-position":"0 -701px",});
+		break;
+	case (state ==="Florida"):
+		$(".flags").css({"background-position":"0 -801px",});
+		break;
+	case (state ==="Georgia"):
+		$(".flags").css({"background-position":"0 -901px", "width":"160px",});
+		break;
+	case (state ==="Hawaii"):
+		$(".flags").css({"background-position":"0 -1001px", "width":"200px",});
+		break;
+	case (state ==="Idaho"):
+		$(".flags").css({"background-position":"0 -1101px", "width":"127px",});
+		break;
+	case (state ==="Illinois"):
+		$(".flags").css({"background-position":"0 -1201px", "width":"169px",});
+		break;
+	case (state ==="Indiana"):
+		$(".flags").css({"background-position":"0 -1301px",});
+		break;
+	case (state ==="Iowa"):
+		$(".flags").css({"background-position":"0 -2401px", "width":"172px",});
+		break;
+	case (state ==="Kansas"):
+		$(".flags").css({"background-position":"0 -1501px", "width":"167px",});
+		break;
+	case (state ==="Kentucky"):
+		$(".flags").css({"background-position":"0 -1601px", "width":"190px",});
+		break;
+	case (state ==="Louisiana"):
+		$(".flags").css({"background-position":"0 -1701px", "width":"157px",});
+		break;
+	case (state ==="Maine"):
+		$(".flags").css({"background-position":"0 -1801px",});
+		break;
+	case (state ==="Maryland"):
+		$(".flags").css({"background-position":"0 -1901px", "width":"146px",});
+		break;
+	case (state ==="Massachusetts"):
+		$(".flags").css({"background-position":"0 -2001px", "width":"167px",});
+		break;
+	case (state ==="Michigan"):
+		$(".flags").css({"background-position":"0 -2101px",});
+		break;
+	case (state ==="Minnesota"):
+		$(".flags").css({"background-position":"0 -2201px", "width":"158px",});
+		break;
+	case (state ==="Mississippi"):
+		$(".flags").css({"background-position":"0 -2301px",});
+		break;
+	case (state ==="Missouri"):
+		$(".flags").css({"background-position":"0 -2401px", "width":"172px",});
+		break;
+	case (state ==="Montana"):
+		$(".flags").css({"background-position":"0 -2501px",});
+		break;
+	case (state ==="Nebraska"):
+		$(".flags").css({"background-position":"0 -2601px", "width":"167px",});
+		break;
+	case (state ==="Nevada"):
+		$(".flags").css({"background-position":"0 -2701px",});
+		break;
+	case (state ==="New Hampshire"):
+		$(".flags").css({"background-position":"0 -2801px",});
+		break;
+	case (state ==="New Jersey"):
+		$(".flags").css({"background-position":"0 -2901px",});
+		break;
+	case (state ==="New Mexico"):
+		$(".flags").css({"background-position":"0 -3001px",});
+		break;
+	case (state ==="New York"):
+		$(".flags").css({"background-position":"0 -3101px", "width":"200px",});
+		break;
+	case (state ==="North Carolina"):
+		$(".flags").css({"background-position":"0 -3201px",});
+		break;
+	case (state ==="North Dakota"):
+		$(".flags").css({"background-position":"0 -3301px", "width":"128px",});
+		break;
+	case (state ==="Ohio"):
+		$(".flags").css({"background-position":"0 -3401px", "width":"163px",});
+		break;
+	case (state ==="Oklahoma"):
+		$(".flags").css({"background-position":"0 -3501px",});
+		break;
+	case (state ==="Oregon"):
+		$(".flags").css({"background-position":"0 -3601px", "width":"167px",});
+		break;
+	case (state ==="Pennsylvania"):
+		$(".flags").css({"background-position":"0 -3701px",});
+		break;
+	case (state ==="Rhode Island"):
+		$(".flags").css({"background-position":"0 -3801px", "width":"107px",});
+		break;
+	case (state ==="South Carolina"):
+		$(".flags").css({"background-position":"0 -3901px",});
+		break;
+	case (state ==="South Dakota"):
+		$(".flags").css({"background-position":"0 -4001px", "width":"160px", "height":"96",});
+		break;
+	case (state ==="Tennessee"):
+		$(".flags").css({"background-position":"0 -4197px", "width":"167px",});
+		break;
+	case (state ==="Texas"):
+		$(".flags").css({"background-position":"0 -4297px",});
+		break;
+	case (state ==="Utah"):
+		$(".flags").css({"background-position":"0 -4397px", "width":"167px",});
+		break;
+	case (state ==="Vermont"):
+		$(".flags").css({"background-position":"0 -4497px", "width":"167px",});
+		break;
+	case (state ==="Virginia"):
+		$(".flags").css({"background-position":"0 -4597px", "width":"146px",});
+		break;
+	case (state ==="Washington"):
+		$(".flags").css({"background-position":"0 -4697px", "width":"168px",});
+		break;
+	case (state ==="West Virginia"):
+		$(".flags").css({"background-position":"0 -4797px", "width":"190px",});
+		break;
+	case (state ==="Wisconsin"):
+		$(".flags").css({"background-position":"0 -4897px",});
+		break;
+	case (state ==="Wyoming"):
+		$(".flags").css({"background-position":"0 -4997px", "width":"143px",});
+		break;
+	default:
+		break;
+}
+
 // hints
 var mottoHint = "This state's motto is \"" + mottos[random] + "\"";
 var firstLetterCapitalHint = "The first letter of this state's capital is " + firstLetterCapital;
@@ -42,7 +195,7 @@ var capitalHint = "The capital of this state is " + capital;
 var hints = [mottoHint, firstLetterCapitalHint, timeZoneHint, firstLetterHint, capitalHint];
 var userResponse;
 var i = 0;
-var hintSelector = ["hintone", "hinttwo", "hintthree", "hintfour", "hintfive"];
+var hintSelector = ["#hintone", "#hinttwo", "#hintthree", "#hintfour", "#hintfive"];
 
 // make case of response irrelevant
 function toTitleCase(str) {
@@ -52,14 +205,8 @@ function toTitleCase(str) {
 }
 
 function disable() {
-	document.getElementById("response").disabled = true;
-	document.getElementById("submit").disabled = true;
-	document.getElementById("label").textContent = "";
+	$("#response, #submit").prop('disabled', true);
 }
-
-$(document).ready(function() {
-  $("form").hide().fadeIn(800);
-});
 
 // get response from text box
 function getGuess() {
@@ -67,35 +214,41 @@ function getGuess() {
 	if(i < 6) {
 		switch(true) {
 			case (states.indexOf(toTitleCase(userResponse)) === -1):
-				document.getElementById("incorrect").textContent = "invalid response. please try again. you have " + (6 - i) + " tries remaining";
-				document.getElementById("correct").textContent = "";
-				document.getElementById("answer").textContent = "";
+				$("#incorrect-panel-title").text("Invalid response!");
+				$("#incorrect-panel-body").text("please try again. you have " + (6 - i) + " tries remaining");
+				$("#incorrect").css("visibility", "visible").hide().fadeIn(300);
 				break;
 			case (userResponse.toUpperCase() === state.toUpperCase()):
-				document.getElementById("incorrect").textContent = "";
-				document.getElementById("correct").textContent = "correct!";
-				document.getElementById("answer").textContent = "";
+				$("#incorrect").fadeOut(800);
+				$("#correct-panel-title").text("Correct!");
+				$("#correct").css("visibility", "visible").hide().fadeIn(300);
 				disable();
 				break;
 			case (i < 5):
-				document.getElementById("incorrect").textContent = "incorrect. you have " + (6 - (i + 1)) + " tries remaining. Hint: " + hints[i];
-				document.getElementById("correct").textContent = "";
-				document.getElementById("answer").textContent = "";
+				$("#incorrect-panel-title").text("Incorrect!");
+				$("#incorrect-panel-body").text("you have " + (6 - (i + 1)) + " tries remaining. Hint: " + hints[i]);
+				$("#incorrect").css("visibility", "visible").hide().fadeIn(300);
+				$("#correct-panel-body").text("");
 				switch(true) {
 					case (hintSelector[i] === hintSelector[0]):
-						document.getElementById(hintSelector[i]).textContent = "Motto: " + hints[i].slice(22);
+						$(hintSelector[i]).text(hints[i].slice(22));
+						$("#rowone").css("visibility", "visible").hide().fadeIn(300);
 						break;
 					case (hintSelector[i] === hintSelector[1]):
-						document.getElementById(hintSelector[i]).textContent = "First letter of capital: " + hints[i].slice(-1);
+						$(hintSelector[i]).text(hints[i].slice(-1));
+						$("#rowtwo").css("visibility", "visible").hide().fadeIn(300);
 						break;
 					case (hintSelector[i] === hintSelector[2]):
-						document.getElementById(hintSelector[i]).textContent = "Time Zone: " + timeZone;
+						$(hintSelector[i]).text(timeZone);
+						$("#rowthree").css("visibility", "visible").hide().fadeIn(300);
 						break;
 					case (hintSelector[i] === hintSelector[3]):
-						document.getElementById(hintSelector[i]).textContent = "First letter of state: " + hints[i].slice(-1);
+						$(hintSelector[i]).text(hints[i].slice(-1));
+						$("#rowfour").css("visibility", "visible").hide().fadeIn(300);
 						break;
 					case (hintSelector[i] === hintSelector[4]):
-						document.getElementById(hintSelector[i]).textContent = "Capital: " + capital;
+						$(hintSelector[i]).text(capital);
+						$("#rowfive").css("visibility", "visible").hide().fadeIn(300);
 						break;
 					default:
 						break;
@@ -103,13 +256,18 @@ function getGuess() {
 				i++;
 				break;
 			case (i === 5):
-				document.getElementById("incorrect").textContent = "";
-				document.getElementById("correct").textContent = "";
 				disable();
-				document.getElementById("answer").textContent = "The correct answer is " + state;
+				$("#info-panel-title").text("You lose!");
+				$("#info-panel-body").text("The correct answer is " + state);
+				$("#answer").css("visibility", "visible").hide().fadeIn(300);
+				$("#incorrect, #break, .form-group, #submit").fadeOut(300);
 				break;
 			default:
 				break;
 		}
 	}
 }
+
+$(document).ready(function() {
+  $("form").hide().fadeIn(800);
+});
